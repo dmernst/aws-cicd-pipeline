@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "d2eb7b12-0276-495c-b87b-4eb1a59c2578",
+		"_postman_id": "8645246a-9a29-4b5f-aadd-a7b3b77c60af",
 		"name": "PetStoreAPI",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -12,9 +12,6 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"/**",
-							" * ",
-							" */ ",
 							"pm.test(\"Is valid response with json array in body\", function () {",
 							"    ",
 							"    // assert that the status code is 200",
@@ -32,16 +29,7 @@
 							"",
 							"pm.test(\"Has Content-Type header\", function () {",
 							"    pm.expect(responseHeaders.hasOwnProperty(\"Content-Type\"));",
-							"});",
-							"",
-							"pm.test(\"Is response time is less than 300ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(300);",
-							"});",
-							"",
-							"",
-							"",
-							"//https://www.chaijs.com/api/bdd/#method_a",
-							"//pm.test('is valid Array', () => pm.expect(pm.response.json()).to.be.an('array').but.not.an('object'))"
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -69,9 +57,6 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"/**",
-							" *  ",
-							" */",
 							"pm.test(\"Is valid response with json object in body\", function () {",
 							"    ",
 							"    // assert that the status code is 200",
@@ -94,10 +79,6 @@
 							"pm.test(\"Is message response equal sucess\", function () {",
 							"    var jsonData = pm.response.json();",
 							"    pm.expect(jsonData.message).to.eql(\"success\");",
-							"});",
-							"",
-							"pm.test(\"Is response time is less than 300ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(300);",
 							"});"
 						],
 						"type": "text/javascript"
@@ -137,9 +118,6 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"/**",
-							" * ",
-							" */",
 							"pm.test(\"Is valid response with json object in body\", function () {",
 							"    ",
 							"    // assert that the status code is 200",
@@ -157,17 +135,7 @@
 							"",
 							"pm.test(\"Has Content-Type header\", function () {",
 							"    pm.expect(responseHeaders.hasOwnProperty(\"Content-Type\"));",
-							"});",
-							"",
-							"pm.test(\"Is response time is less than 300ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(300);",
-							"});",
-							"",
-							"",
-							"",
-							"//https://www.chaijs.com/api/bdd/#method_a",
-							"//pm.test('is valid Array', () => pm.expect(pm.response.json()).to.be.an('array').but.not.an('object'))",
-							""
+							"});"
 						],
 						"type": "text/javascript"
 					}
