@@ -1,0 +1,31 @@
+:q
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="PetStoreAPI" tests="3" time="0.538">
+  <testsuite name="list pets" id="7339e71e-7def-463f-b7ec-c4465af9559d" timestamp="2022-07-17T00:52:23.200Z" tests="3" failures="1" errors="0" time="0.209">
+    <testcase name="Is valid response with json array in body" time="0.209" classname="PetStoreApi"/>
+    <testcase name="Has Content-Type header" time="0.209" classname="PetStoreApi"/>
+    <testcase name="Is response time is less than 200ms" time="0.209" classname="PetStoreApi">
+      <failure type="AssertionFailure" message="expected 209 to be below 200">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 83e98cfc-83a9-46f8-916d-21d1a2b4e062.]]>
+        <![CDATA[Collection name: PetStoreAPI.]]>
+        <![CDATA[Request name: list pets.]]>
+        <![CDATA[Test description: Is response time is less than 200ms.]]>
+        <![CDATA[Error message: expected 209 to be below 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 209 to be below 200
+   at Object.eval sandbox-script.js:3:1).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="add pet" id="da327dc6-b280-4f93-a9ef-68af44401600" timestamp="2022-07-17T00:52:23.200Z" tests="4" failures="0" errors="0" time="0.165">
+    <testcase name="Is valid response with json object in body" time="0.165" classname="PetStoreApi"/>
+    <testcase name="Has Content-Type header" time="0.165" classname="PetStoreApi"/>
+    <testcase name="Is message response equal sucess" time="0.165" classname="PetStoreApi"/>
+    <testcase name="Is response time is less than 200ms" time="0.165" classname="PetStoreApi"/>
+  </testsuite>
+  <testsuite name="get pet by id" id="881a5e9b-99eb-48d9-bd36-f02ba041b4f0" timestamp="2022-07-17T00:52:23.200Z" tests="3" failures="0" errors="0" time="0.164">
+    <testcase name="Is valid response with json object in body" time="0.164" classname="PetStoreApi"/>
+    <testcase name="Has Content-Type header" time="0.164" classname="PetStoreApi"/>
+    <testcase name="Is response time is less than 200ms" time="0.164" classname="PetStoreApi"/>
+  </testsuite>
+</testsuites>
